@@ -4,10 +4,10 @@ from matplotlib import pyplot as plt
 
 class naiveBayesian():
     def __init__(self):
-    
+
     def features_count(training_data):
         row, column = training_data.shape
-        features_nuim = []
+        features_num = []
         for i in range(column):
             features = set(training_data[:, i])
             features_num.append(len(features))
@@ -25,4 +25,4 @@ class naiveBayesian():
         features_num = self.features_count(training_data)
         labels_num = self.labels_count(labels)
         return features_num, labels_num
-        
+
